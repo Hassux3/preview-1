@@ -9,7 +9,6 @@ import Performance from "./components/Performance";
 import Management from "./components/Management";
 import Footer from "./components/Footer";
 
-// Register ScrollTrigger plugin once at the top level
 gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {

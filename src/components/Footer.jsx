@@ -25,7 +25,7 @@ const TestimonialCarousel = () => {
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [testimonials.length]);
 
   return (
     <div className="relative h-48 flex items-center justify-center text-center fade-up-init">
@@ -201,13 +201,13 @@ const Footer = () => {
             © 2024 NetFlow vBNG Systems. All rights reserved.
           </div>
           <div className="flex space-x-8">
-            <a href="#" className="hover:text-blue-600 transition-colors">
+            <a href="/#" className="hover:text-blue-600 transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-blue-600 transition-colors">
+            <a href="/#" className="hover:text-blue-600 transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-blue-600 transition-colors">
+            <a href="/#" className="hover:text-blue-600 transition-colors">
               Documentation
             </a>
           </div>
